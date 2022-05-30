@@ -15,8 +15,10 @@ xx = xx*(2/max(abs(xx))); %--Scale the input x[n] to the range [-2,+2]
 
 
 yy= conv(xx,hh); %Filtering...
-if max(yy(200:length(yy)-200)) >= 0.59
+if max(yy(200:length(yy)-200)) >= .59
     sc=1;
 else
     sc=0;
+
+%sc=1;
 end

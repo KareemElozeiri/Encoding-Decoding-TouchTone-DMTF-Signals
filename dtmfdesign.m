@@ -18,5 +18,5 @@ for i = 1:length(fb)
     h = beta*h;
     hh = [hh;h];
 end 
-
+hh=hh';
 end

@@ -37,9 +37,9 @@ for kk=1:length(nstart)
         locs = [locs, dtmfscore(x_seg,hh(:,jj))];
     end
      
-    aa = find(locs == 1);
+    aa = find(locs == 1)
     
-    if length(aa) ~= 2 || aa(1) > 4 || aa(2) < 5
+    if length(aa) ~= 2 | aa(1) > 4 | aa(2) < 5
         
         continue
     end
@@ -48,5 +48,4 @@ for kk=1:length(nstart)
     col = aa(2)-4;
 
     keys = [keys, dtmf.keys(row,col)];
-end
 end
